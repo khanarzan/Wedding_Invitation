@@ -1625,6 +1625,11 @@ img {
      font-family: 'Parisienne';
 }
 
+.section-2 p.t2.won {
+     font-size: 3.5em;
+     font-weight: 600;
+     font-family: 'Great Vibes';
+}
 .section-2 p.t3 {
      font-size: 2.5em;
      font-weight: 400;
