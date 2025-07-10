@@ -1,4 +1,4 @@
-/* Generated At: Thu Jul 10 2025 15:22:43 GMT+0530 (India Standard Time) 
+/* Generated At: Thu Jul 10 2025 15:43:44 GMT+0530 (India Standard Time) 
  Latest Commit:  
  Latest Build Number: undefined */ 
 var __defProp = Object.defineProperty;
@@ -30231,28 +30231,78 @@ var tvsAllProductService = class _tvsAllProductService {
 };
 
 // src/app/components/tvs-ui-component-widget/tvs-ui-component-widget.ts
+function TvsUiComponentWidgetComponent_div_3_li_16_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "li");
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const tag_r1 = ctx.$implicit;
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate1("#", tag_r1, "");
+  }
+}
 function TvsUiComponentWidgetComponent_div_3_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div")(1, "h3");
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "p");
-    \u0275\u0275text(4);
+    \u0275\u0275element(3, "img", 2);
+    \u0275\u0275elementStart(4, "p");
+    \u0275\u0275text(5);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "strong");
-    \u0275\u0275text(6);
+    \u0275\u0275elementStart(6, "strong");
+    \u0275\u0275text(7);
     \u0275\u0275elementEnd();
-    \u0275\u0275element(7, "hr");
+    \u0275\u0275elementStart(8, "p")(9, "em");
+    \u0275\u0275text(10);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(11, "p");
+    \u0275\u0275text(12);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(13, "p");
+    \u0275\u0275text(14);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(15, "ul");
+    \u0275\u0275template(16, TvsUiComponentWidgetComponent_div_3_li_16_Template, 2, 1, "li", 1);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(17, "p")(18, "strong");
+    \u0275\u0275text(19, "Warranty:");
+    \u0275\u0275elementEnd();
+    \u0275\u0275text(20);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(21, "p")(22, "strong");
+    \u0275\u0275text(23, "Shipping:");
+    \u0275\u0275elementEnd();
+    \u0275\u0275text(24);
+    \u0275\u0275elementEnd();
+    \u0275\u0275element(25, "hr");
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const product_r1 = ctx.$implicit;
+    const product_r2 = ctx.$implicit;
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(product_r1.title);
+    \u0275\u0275textInterpolate(product_r2.title);
+    \u0275\u0275advance();
+    \u0275\u0275propertyInterpolate("alt", product_r2.title);
+    \u0275\u0275property("src", product_r2.thumbnail, \u0275\u0275sanitizeUrl);
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(product_r1.description);
+    \u0275\u0275textInterpolate(product_r2.description);
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate1("Price: $", product_r1.price, "");
+    \u0275\u0275textInterpolate1("Price: $", product_r2.price, "");
+    \u0275\u0275advance(3);
+    \u0275\u0275textInterpolate1("Status: ", product_r2.availabilityStatus, "");
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate1("Brand: ", product_r2.brand, "");
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate1("Rating: ", product_r2.rating, "");
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngForOf", product_r2.tags);
+    \u0275\u0275advance(4);
+    \u0275\u0275textInterpolate1(" ", product_r2.warrantyInformation, "");
+    \u0275\u0275advance(4);
+    \u0275\u0275textInterpolate1(" ", product_r2.shippingInformation, "");
   }
 }
 var TvsUiComponentWidgetComponent = class _TvsUiComponentWidgetComponent extends BaseComponent {
@@ -30274,12 +30324,12 @@ var TvsUiComponentWidgetComponent = class _TvsUiComponentWidgetComponent extends
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _TvsUiComponentWidgetComponent, selectors: [["tvs-ui-component-widget"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 12, vars: 1, consts: [[1, "tvs-ui-component-wrapper"], [4, "ngFor", "ngForOf"]], template: function TvsUiComponentWidgetComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _TvsUiComponentWidgetComponent, selectors: [["tvs-ui-component-widget"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 12, vars: 1, consts: [[1, "tvs-ui-component-wrapper"], [4, "ngFor", "ngForOf"], ["width", "100", 3, "src", "alt"]], template: function TvsUiComponentWidgetComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "h1");
         \u0275\u0275text(2, "Product List");
         \u0275\u0275elementEnd();
-        \u0275\u0275template(3, TvsUiComponentWidgetComponent_div_3_Template, 8, 3, "div", 1);
+        \u0275\u0275template(3, TvsUiComponentWidgetComponent_div_3_Template, 26, 11, "div", 1);
         \u0275\u0275elementStart(4, "div")(5, "h3");
         \u0275\u0275text(6, "Tesing");
         \u0275\u0275elementEnd();
@@ -30347,9 +30397,7 @@ var AppModule = class _AppModule {
     this.\u0275mod = /* @__PURE__ */ \u0275\u0275defineNgModule({ type: _AppModule });
   }
   static {
-    this.\u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({ providers: [
-      tvsAllProductService
-    ], imports: [
+    this.\u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({ imports: [
       BrowserModule,
       HttpClientModule
     ] });
