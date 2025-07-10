@@ -1,4 +1,4 @@
-/* Generated At: Thu Jul 10 2025 15:48:22 GMT+0530 (India Standard Time) 
+/* Generated At: Thu Jul 10 2025 15:53:24 GMT+0530 (India Standard Time) 
  Latest Commit:  
  Latest Build Number: undefined */ 
 var __defProp = Object.defineProperty;
@@ -30231,7 +30231,7 @@ var tvsAllProductService = class _tvsAllProductService {
 };
 
 // src/app/components/tvs-ui-component-widget/tvs-ui-component-widget.ts
-function TvsUiComponentWidgetComponent_div_6_li_16_Template(rf, ctx) {
+function TvsUiComponentWidgetComponent_div_9_li_16_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "li");
     \u0275\u0275text(1);
@@ -30243,7 +30243,7 @@ function TvsUiComponentWidgetComponent_div_6_li_16_Template(rf, ctx) {
     \u0275\u0275textInterpolate1("#", tag_r1, "");
   }
 }
-function TvsUiComponentWidgetComponent_div_6_Template(rf, ctx) {
+function TvsUiComponentWidgetComponent_div_9_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div")(1, "h3");
     \u0275\u0275text(2);
@@ -30265,7 +30265,7 @@ function TvsUiComponentWidgetComponent_div_6_Template(rf, ctx) {
     \u0275\u0275text(14);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(15, "ul");
-    \u0275\u0275template(16, TvsUiComponentWidgetComponent_div_6_li_16_Template, 2, 1, "li", 1);
+    \u0275\u0275template(16, TvsUiComponentWidgetComponent_div_9_li_16_Template, 2, 1, "li", 1);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(17, "p")(18, "strong");
     \u0275\u0275text(19, "Warranty:");
@@ -30324,7 +30324,7 @@ var TvsUiComponentWidgetComponent = class _TvsUiComponentWidgetComponent extends
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _TvsUiComponentWidgetComponent, selectors: [["tvs-ui-component-widget"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 15, vars: 4, consts: [[1, "tvs-ui-component-wrapper"], [4, "ngFor", "ngForOf"], ["width", "100", 3, "src", "alt"]], template: function TvsUiComponentWidgetComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _TvsUiComponentWidgetComponent, selectors: [["tvs-ui-component-widget"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 18, vars: 7, consts: [[1, "tvs-ui-component-wrapper"], [4, "ngFor", "ngForOf"], ["width", "100", 3, "src", "alt"]], template: function TvsUiComponentWidgetComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "h1");
         \u0275\u0275text(2, "Product List");
@@ -30333,22 +30333,28 @@ var TvsUiComponentWidgetComponent = class _TvsUiComponentWidgetComponent extends
         \u0275\u0275text(4);
         \u0275\u0275pipe(5, "json");
         \u0275\u0275elementEnd();
-        \u0275\u0275template(6, TvsUiComponentWidgetComponent_div_6_Template, 26, 11, "div", 1);
-        \u0275\u0275elementStart(7, "div")(8, "h3");
-        \u0275\u0275text(9, "Tesing");
+        \u0275\u0275elementStart(6, "div");
+        \u0275\u0275text(7);
+        \u0275\u0275pipe(8, "json");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(10, "p");
-        \u0275\u0275text(11, "Tesing");
+        \u0275\u0275template(9, TvsUiComponentWidgetComponent_div_9_Template, 26, 11, "div", 1);
+        \u0275\u0275elementStart(10, "div")(11, "h3");
+        \u0275\u0275text(12, "Tesing");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(12, "strong");
-        \u0275\u0275text(13, "Tesing");
+        \u0275\u0275elementStart(13, "p");
+        \u0275\u0275text(14, "Tesing");
         \u0275\u0275elementEnd();
-        \u0275\u0275element(14, "hr");
+        \u0275\u0275elementStart(15, "strong");
+        \u0275\u0275text(16, "Tesing");
+        \u0275\u0275elementEnd();
+        \u0275\u0275element(17, "hr");
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
         \u0275\u0275advance(4);
-        \u0275\u0275textInterpolate(\u0275\u0275pipeBind1(5, 2, ctx.products));
+        \u0275\u0275textInterpolate(\u0275\u0275pipeBind1(5, 3, ctx.products));
+        \u0275\u0275advance(3);
+        \u0275\u0275textInterpolate(\u0275\u0275pipeBind1(8, 5, ctx.products[0].title));
         \u0275\u0275advance(2);
         \u0275\u0275property("ngForOf", ctx.products);
       }
