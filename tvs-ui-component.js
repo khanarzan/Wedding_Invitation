@@ -1,4 +1,4 @@
-/* Generated At: Thu Jul 10 2025 15:58:28 GMT+0530 (India Standard Time) 
+/* Generated At: Thu Jul 10 2025 16:47:58 GMT+0530 (India Standard Time) 
  Latest Commit:  
  Latest Build Number: undefined */ 
 var __defProp = Object.defineProperty;
@@ -30231,7 +30231,7 @@ var tvsAllProductService = class _tvsAllProductService {
 };
 
 // src/app/components/tvs-ui-component-widget/tvs-ui-component-widget.ts
-function TvsUiComponentWidgetComponent_div_8_li_16_Template(rf, ctx) {
+function TvsUiComponentWidgetComponent_div_3_div_1_li_16_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "li");
     \u0275\u0275text(1);
@@ -30243,12 +30243,12 @@ function TvsUiComponentWidgetComponent_div_8_li_16_Template(rf, ctx) {
     \u0275\u0275textInterpolate1("#", tag_r1, "");
   }
 }
-function TvsUiComponentWidgetComponent_div_8_Template(rf, ctx) {
+function TvsUiComponentWidgetComponent_div_3_div_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div")(1, "h3");
     \u0275\u0275text(2);
     \u0275\u0275elementEnd();
-    \u0275\u0275element(3, "img", 2);
+    \u0275\u0275element(3, "img", 4);
     \u0275\u0275elementStart(4, "p");
     \u0275\u0275text(5);
     \u0275\u0275elementEnd();
@@ -30265,7 +30265,7 @@ function TvsUiComponentWidgetComponent_div_8_Template(rf, ctx) {
     \u0275\u0275text(14);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(15, "ul");
-    \u0275\u0275template(16, TvsUiComponentWidgetComponent_div_8_li_16_Template, 2, 1, "li", 1);
+    \u0275\u0275template(16, TvsUiComponentWidgetComponent_div_3_div_1_li_16_Template, 2, 1, "li", 3);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(17, "p")(18, "strong");
     \u0275\u0275text(19, "Warranty:");
@@ -30305,17 +30305,38 @@ function TvsUiComponentWidgetComponent_div_8_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", product_r2.shippingInformation, "");
   }
 }
+function TvsUiComponentWidgetComponent_div_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div");
+    \u0275\u0275template(1, TvsUiComponentWidgetComponent_div_3_div_1_Template, 26, 11, "div", 3);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const ctx_r2 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("ngForOf", ctx_r2.getProducts);
+  }
+}
+function TvsUiComponentWidgetComponent_ng_template_12_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "p");
+    \u0275\u0275text(1, "Loading products or no data found.");
+    \u0275\u0275elementEnd();
+  }
+}
 var TvsUiComponentWidgetComponent = class _TvsUiComponentWidgetComponent extends BaseComponent {
   constructor(element, tvsAllProductService2, cd) {
     super(element);
     this.element = element;
     this.tvsAllProductService = tvsAllProductService2;
     this.cd = cd;
-    this.products = [];
+    this.getProducts = [];
   }
   ngOnInit() {
     this.tvsAllProductService.getProducts().subscribe((response) => {
-      this.products = response.products;
+      this.getProducts = response.products;
+      this.cd.detectChanges();
+      debugger;
     });
   }
   static {
@@ -30324,40 +30345,32 @@ var TvsUiComponentWidgetComponent = class _TvsUiComponentWidgetComponent extends
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _TvsUiComponentWidgetComponent, selectors: [["tvs-ui-component-widget"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 17, vars: 5, consts: [[1, "tvs-ui-component-wrapper"], [4, "ngFor", "ngForOf"], ["width", "100", 3, "src", "alt"]], template: function TvsUiComponentWidgetComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _TvsUiComponentWidgetComponent, selectors: [["tvs-ui-component-widget"]], features: [\u0275\u0275InheritDefinitionFeature], decls: 14, vars: 2, consts: [["loading", ""], [1, "tvs-ui-component-wrapper"], [4, "ngIf", "ngIfElse"], [4, "ngFor", "ngForOf"], ["width", "100", 3, "src", "alt"]], template: function TvsUiComponentWidgetComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 0)(1, "h1");
+        \u0275\u0275elementStart(0, "div", 1)(1, "h1");
         \u0275\u0275text(2, "Product List");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(3, "div");
-        \u0275\u0275text(4);
-        \u0275\u0275pipe(5, "json");
+        \u0275\u0275template(3, TvsUiComponentWidgetComponent_div_3_Template, 2, 1, "div", 2);
+        \u0275\u0275elementStart(4, "div")(5, "h3");
+        \u0275\u0275text(6, "Tesing");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(6, "div");
-        \u0275\u0275text(7);
+        \u0275\u0275elementStart(7, "p");
+        \u0275\u0275text(8, "Tesing");
         \u0275\u0275elementEnd();
-        \u0275\u0275template(8, TvsUiComponentWidgetComponent_div_8_Template, 26, 11, "div", 1);
-        \u0275\u0275elementStart(9, "div")(10, "h3");
-        \u0275\u0275text(11, "Tesing");
+        \u0275\u0275elementStart(9, "strong");
+        \u0275\u0275text(10, "Tesing");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(12, "p");
-        \u0275\u0275text(13, "Tesing");
+        \u0275\u0275element(11, "hr");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(14, "strong");
-        \u0275\u0275text(15, "Tesing");
+        \u0275\u0275template(12, TvsUiComponentWidgetComponent_ng_template_12_Template, 2, 0, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
         \u0275\u0275elementEnd();
-        \u0275\u0275element(16, "hr");
-        \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
-        \u0275\u0275advance(4);
-        \u0275\u0275textInterpolate(\u0275\u0275pipeBind1(5, 3, ctx.products));
+        const loading_r4 = \u0275\u0275reference(13);
         \u0275\u0275advance(3);
-        \u0275\u0275textInterpolate(ctx.products[0] == null ? null : ctx.products[0].title);
-        \u0275\u0275advance();
-        \u0275\u0275property("ngForOf", ctx.products);
+        \u0275\u0275property("ngIf", ctx.getProducts == null ? null : ctx.getProducts.length)("ngIfElse", loading_r4);
       }
-    }, dependencies: [NgForOf, JsonPipe], styles: ["\n\n.tvs-referral-wrapper[_ngcontent-%COMP%] {\n  box-sizing: border-box;\n  max-width: 100%;\n  max-height: 100%;\n}"] });
+    }, dependencies: [NgForOf, NgIf], styles: ["\n\n.tvs-referral-wrapper[_ngcontent-%COMP%] {\n  box-sizing: border-box;\n  max-width: 100%;\n  max-height: 100%;\n}"] });
   }
 };
 (() => {
@@ -30408,7 +30421,9 @@ var AppModule = class _AppModule {
     this.\u0275mod = /* @__PURE__ */ \u0275\u0275defineNgModule({ type: _AppModule });
   }
   static {
-    this.\u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({ imports: [
+    this.\u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({ providers: [
+      tvsAllProductService
+    ], imports: [
       BrowserModule,
       HttpClientModule
     ] });
