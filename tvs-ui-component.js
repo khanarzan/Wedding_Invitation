@@ -28132,13 +28132,13 @@ var TvsUiComponentWidgetComponent = class _TvsUiComponentWidgetComponent extends
         \u0275\u0275text(2, "Product List");
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(3, "div")(4, "h3");
-        \u0275\u0275text(5, "Tesing");
+        \u0275\u0275text(5, "Tvs Ui Component H3 Tag");
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(6, "p");
-        \u0275\u0275text(7, "Tesing");
+        \u0275\u0275text(7, "TvsUiComponent P Tag");
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(8, "strong");
-        \u0275\u0275text(9, "Tesing");
+        \u0275\u0275text(9, "Tvs Ui Component Strong Tag");
         \u0275\u0275elementEnd();
         \u0275\u0275element(10, "hr");
         \u0275\u0275elementEnd()();
